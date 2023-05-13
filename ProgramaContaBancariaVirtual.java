@@ -18,15 +18,17 @@ public class ProgramaContaBancariaVirtual {
 
         while (opcaoMenu != 4) {
             System.out.println("Operações");
-
             System.out.println("1- Consultar saldo");
             System.out.println("2- Receber valor");
             System.out.println("3- Transferir valor");
             System.out.println("4- Sair");
 
-            System.out.println("Digite a opção desejada:");
+            System.out.println("\nDigite a opção desejada:");
             opcaoMenu = input.nextInt();
 
+            if (opcaoMenu == 1) {
+                System.out.printf("Seu saldo atual é: %.2f%n \n", saldo);
+            }
         }
     }
 }

@@ -28,6 +28,9 @@ public class ProgramaContaBancariaVirtual {
 
             if (opcaoMenu == 1) {
                 System.out.printf("Seu saldo atual é: %.2f%n \n", saldo);
+            } else if (opcaoMenu == 2) {
+                System.out.println("Informe o valor a ser recebido: ");
+                saldo += input.nextDouble();
             }
         }
     }

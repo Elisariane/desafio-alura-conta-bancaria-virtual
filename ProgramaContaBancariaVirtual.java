@@ -31,6 +31,13 @@ public class ProgramaContaBancariaVirtual {
             } else if (opcaoMenu == 2) {
                 System.out.println("Informe o valor a ser recebido: ");
                 saldo += input.nextDouble();
+            } else if (opcaoMenu == 3) {
+                System.out.println("Informe o valor a ser transferido: ");
+                double valor = input.nextDouble();
+                if (valor > saldo)
+                    System.out.println("Não há saldo suficiente para fazer essa transferência.");
+                else
+                    saldo = saldo - valor;
             }
         }
     }
